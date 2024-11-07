@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="centralcee.css">
+</head>
+<body>
+    <div class="buttonsforcentralcee">
+        <a href="index.html" class="button-link">Home</a>
+    </div>
+
+    <div class="textcentralcee">
+        <p>
+            "I loved you until you try to get in my head
+            And that's why I lost respect
+            You're doin' the most to get my attention, baby, I'm not impressed, uh
+            I changed my bedsheets, but I still smell your flesh
+            I don't know how we got in this mess
+            I rarely get this in-depth
+            This girl make me question love
+            This girl make me feel like less of a man 'cause I'm feelin' depressed and stuff
+            Can't believe I was willing to drop everyone and invest in us
+            The last time that we fucked was fucked, the way you got up, got dressed and cut
+            Look, I thought that we could've been
+            Maybe, I was too optimistic
+            Tell me what you need, I'll provide everythin'
+            Baby, you don't know what you're missin'
+            Our chemistry felt like quantum physics, physics
+            Feelin' your energy, feelin' your spirit
+            If this is the end, I need one more visit
+            They're showin' me love, but I still feel empty
+            I need somethin' a lot more fulfillin', uh
+            Move out of London town then move to a rural village
+            You made me delete that pic off my phone
+            But I close my eyes, still see that image
+            Won't chase if my heart ain't in it, it's finished
+            Too far gone, can't fix it, bitch, this damage is done" - Central Cee
+        </p>>
+    </div>
+
+    <audio id="myAudio">
+        <source src="uk rap music\Central Cee - Let Go [Music Video].mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Single Play/Pause button -->
+    <button onclick="togglePlayPause()" id="playPauseButton">Play Music</button>
+
+    <!-- JavaScript to toggle between play and pause -->
+    <script>
+        const audio = document.getElementById("myAudio");
+        const playPauseButton = document.getElementById("playPauseButton");
+
+        function togglePlayPause() {
+            if (audio.paused) {
+                audio.play();
+                playPauseButton.textContent = "Pause Central Cee";
+            } else {
+                audio.pause();
+                playPauseButton.textContent = "Play Central Cee";
+            }
+        }
+    </script>
+
+</body>
+</html>
