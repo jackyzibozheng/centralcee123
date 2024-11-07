@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url('fonts/Roboto-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url('uk rapper images/ardee.jpg'); /* Replace with your image path */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Makes the body full viewport height */
+    margin: 0; /* Removes default margin */
+}
+
+.buttonsforcentralcee {
+    font-family: 'Roboto-Thin';
+    font-size: 30px;
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    align-items: center;
+    gap: 150px; /* Adjusts spacing between buttons */
+    justify-content: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+/* Apply styles directly to links or buttons inside .threerappernames */
+.buttonsforcentralcee a,
+.buttonsforcentralcee button {
+    text-decoration: none; /* Removes underline */
+    background: none; /* Removes button background */
+    border: none; /* Removes button border */
+    color: #333; /* Sets text color */
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: inherit; /* Inherits font size from .threerappernames */
+    font-family: inherit; /* Inherits font family from .threerappernames */
+    text-shadow: inherit; /* Inherits text shadow */
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition */
+}
+
+/* Optional hover effect */
+.buttonsforcentralcee a:hover,
+.buttonsforcentralcee button:hover {
+    color: #000000; /* Change text color on hover */
+    background-color: rgba(255, 255, 255, 0.63); /* Adds a light background on hover */
+}
+
+.center-content {
+    text-align: center; /* Centers content within this container */
+}
+
+.textcentralcee {
+    padding: 20px;
+    border: 2px solid #333;
+    background-color: #f0f0f0;
+    width: 300px;
+    margin-left: 1950px; /* Left-aligned box */
+    margin-top: 200px; /* Left-aligned box */
+    text-align: center; /* Left-aligns text within the box */
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Roboto-Thin';
+    font-style: italic;
+}
+
+ /* Style for the play/pause button */
+ #playPauseButton {
+    padding: 30px 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0c3300;
+    border-left: 5px solid #0c3300; /* Adjusts left border width and color */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-family: 'Roboto-Thin';
+    margin-left: 1950px; /* Moves the button 250px away from the left */
+}
+
+
+/* Hover effect */
+#playPauseButton:hover {
+    background-color: #000000; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+/* Focus effect for accessibility */
+#playPauseButton:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ffffff;
+}

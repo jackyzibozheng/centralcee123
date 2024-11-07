@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url('fonts/Roboto-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Background overlay */
+.imageforindex {
+    position: fixed; /* Stays in place during scrolling */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('uk rapper images/homepage.JPG');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1; /* Places it behind the text content */
+}
+
+/* Apply the overlay with reduced opacity */
+.imageforindex::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.788); /* Semi-transparent white overlay */
+    pointer-events: none;
+}
+
+/* Style for text content to appear above the overlay */
+.content {
+    position: relative;
+    z-index: 1; /* Ensures it sits above the overlay */
+}
+
+.Index-Title {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    font-family: 'Roboto-Thin';
+    font-size: 100px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 3);
+    color:#4d0909;
+}
+
+
+
+.threerappernames {
+    font-family: 'Roboto-Thin';
+    font-size: 30px;
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    align-items: center;
+    gap: 150px; /* Adjusts spacing between buttons */
+    justify-content: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+/* Apply styles directly to links or buttons inside .threerappernames */
+.threerappernames a,
+.threerappernames button {
+    text-decoration: none; /* Removes underline */
+    background: none; /* Removes button background */
+    border: none; /* Removes button border */
+    color: #333; /* Sets text color */
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: inherit; /* Inherits font size from .threerappernames */
+    font-family: inherit; /* Inherits font family from .threerappernames */
+    text-shadow: inherit; /* Inherits text shadow */
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition */
+}
+
+/* Optional hover effect */
+.threerappernames a:hover,
+.threerappernames button:hover {
+    color: #000000; /* Change text color on hover */
+    background-color: rgba(255, 255, 255, 0.63); /* Adds a light background on hover */
+}
+

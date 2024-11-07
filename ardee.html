@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ardee.css">
+</head>
+<body>
+    <div class="buttonsforcentralcee">
+        <a href="index.html" class="button-link">Home</a>
+    </div>
+
+    <div class="textcentralcee">
+        <p>
+            "ArrDee, ArrDee
+            Come and you go
+            Can't trust a soul, no
+            Story of my life
+            Look, uh
+            In this world, you come and you go (go)
+            Story of my life
+            I've been on my ones, I'm grinding
+            Not gettin' by but it's all timing
+            I don't mind it, it's alright
+            However you cope
+            When you live in a place so cold
+            Hearts get froze, I don't trust a soul
+            'Cause in this world, you come and you go (go)
+            Story of my life
+            I've been on my ones, I'm grinding
+            Not gettin' by but it's all timing
+            I don't mind it, it's alright
+            However you cope
+            When you live in a place so cold
+            Hearts get froze, I don't trust a soul
+            Started from young and the kid ain't grown
+            But the problem have, I hardly did know my dad
+            But it weren't his fault, I'm no longer mad
+            He does what he can, they come and they go (always)
+            The first girl that I had still fucks with my mind
+            But the girl is a ho
+            But now I'm trash so what do you know
+            I cum and I go, literally
+            They all show love on the road
+            And I got all the bad girls tryna get pics with me
+            If I step in the club then they sit with me (come)
+            It's a blessing I ain't gonna bitch, but see
+            I bet you now they wouldn't stick with me (facts)
+            If I didn't rock this flow
+            If I didn't pop then blow but I chose this" - Central Cee
+        </p>>
+    </div>
+
+    <audio id="myAudio">
+        <source src="uk rap music/ArrDee - Come & Go (Official Music Video).mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Single Play/Pause button -->
+    <button onclick="togglePlayPause()" id="playPauseButton">Play Music</button>
+
+    <!-- JavaScript to toggle between play and pause -->
+    <script>
+        const audio = document.getElementById("myAudio");
+        const playPauseButton = document.getElementById("playPauseButton");
+
+        function togglePlayPause() {
+            if (audio.paused) {
+                audio.play();
+                playPauseButton.textContent = "Pause Ardee";
+            } else {
+                audio.pause();
+                playPauseButton.textContent = "Play Ardee";
+            }
+        }
+    </script>
+
+</body>
+</html>
